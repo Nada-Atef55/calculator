@@ -4,14 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter first number : ");
-            int a = int.Parse(Console.ReadLine());
+            while(true)
+            {
+                Console.Write("Enter first number : ");
+                bool checkNum1 = int.TryParse(Console.ReadLine(), out int num1);
 
-            Console.Write("Enter second number : ");
-            int b = int.Parse(Console.ReadLine());
+                Console.Write("Enter second number : ");
+                bool checkNum2 = int.TryParse(Console.ReadLine(), out int num2);
 
-            
-
+                if (!(checkNum1 && checkNum2))
+                {
+                    Console.WriteLine("invalid input");
+                    break;
+                }
+            }
         }
     }
 }
