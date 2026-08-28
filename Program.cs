@@ -26,7 +26,32 @@
                 Console.WriteLine("(4) division");
                  
                 int opr=int.Parse(Console.ReadLine());
-                
+
+                int res = 0;
+                if (opr == 0)
+                {
+                    break;
+                }
+                else if (opr == 1)
+                {
+                    res = num1 + num2;
+                }
+                else if (opr == 2)
+                {
+                    res = num1 - num2;
+                }
+                else if (opr == 3)
+                {
+                    res = num1 * num2;
+                }
+                else
+                {
+                    res = num1 / num2;
+                }
+
+                Console.WriteLine($"The result is {res}");
+                Console.WriteLine("--------------------------------------------");
+
                 
             }
         }
