@@ -6,6 +6,20 @@
         {
             while(true)
             {
+                Console.WriteLine("Choose an operation to apply or (0) to exit :");
+                Console.WriteLine("(0) exit");
+                Console.WriteLine("(1) addition");
+                Console.WriteLine("(2) subtraction");
+                Console.WriteLine("(3) multiplication");
+                Console.WriteLine("(4) division");
+
+                int opr = int.Parse(Console.ReadLine());
+
+                int res = 0;
+                if (opr == 0)
+                {
+                    break;
+                }
                 Console.Write("Enter first number : ");
                 bool checkNum1 = int.TryParse(Console.ReadLine(), out int num1);
 
@@ -18,21 +32,8 @@
                     break;
                 }
 
-                Console.WriteLine("Choose an operation to apply or (0) to exit :");
-                Console.WriteLine("(0) exit");
-                Console.WriteLine("(1) addition");
-                Console.WriteLine("(2) subtraction");
-                Console.WriteLine("(3) multiplication");
-                Console.WriteLine("(4) division");
-                 
-                int opr=int.Parse(Console.ReadLine());
-
-                int res = 0;
-                if (opr == 0)
-                {
-                    break;
-                }
-                else if (opr == 1)
+                
+                if (opr == 1)
                 {
                     res = num1 + num2;
                 }
