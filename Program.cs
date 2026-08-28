@@ -17,6 +17,17 @@
                     Console.WriteLine("invalid input");
                     break;
                 }
+
+                Console.WriteLine("Choose an operation to apply or (0) to exit :");
+                Console.WriteLine("(0) exit");
+                Console.WriteLine("(1) addition");
+                Console.WriteLine("(2) subtraction");
+                Console.WriteLine("(3) multiplication");
+                Console.WriteLine("(4) division");
+                 
+                int opr=int.Parse(Console.ReadLine());
+                
+                
             }
         }
     }
