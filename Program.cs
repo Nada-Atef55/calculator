@@ -46,6 +46,11 @@
                 }
                 else
                 {
+                    if (num2 == 0)
+                    {
+                        Console.WriteLine("cann't divide by 0");
+                        break;
+                    }
                     res = num1 / num2;
                 }
 
